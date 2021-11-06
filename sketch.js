@@ -81,9 +81,9 @@ function readStock(data){
 function writeStock(x) {
 
   if(x<=0){
-    x=0;
+     x = x-1;
   }else{
-    x = x-1;
+    x = 0
   }
 
   database.ref("/").update({
